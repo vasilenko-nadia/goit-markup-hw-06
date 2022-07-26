@@ -813,7 +813,7 @@ img {
 
   color: #212121;
 
-  margin: 0;
+  margin-bottom: 12px;
 }
 
 .input-list {
@@ -828,7 +828,6 @@ img {
 }
 
 .modal-coment::placeholder {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -854,6 +853,12 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.input-list:hover + .modal-icon {
+  fill: var(--accent-color);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 textarea {
   display: block;
   resize: none;
@@ -868,8 +873,7 @@ textarea {
 }
 
 .modal-list {
-  font-family: 'Roboto';
-  font-style: normal;
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -878,16 +882,12 @@ textarea {
 
   color: #757575;
 
-  padding-bottom: 4px;
-  padding-top: 10px;
-}
-
-.modal-list:not(:last-child) {
-  display: block;
+  margin-bottom: 10px;
 }
 
 .modal-icon {
   position: absolute;
+  fill: '#212121';
   left: 40px;
   transform: translate(100%, 100%);
 }
